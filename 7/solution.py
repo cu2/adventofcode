@@ -68,7 +68,7 @@ def calculate_wire_value(wires, wire_name):
         return input_values[0] << input_values[1]
     if wire['gate'] == 'RSHIFT':
         return input_values[0] >> input_values[1]
-    raise Error('???')
+    raise Exception('Unknown gate')
 
 
 def solve_wires(wires, wire_graph):
