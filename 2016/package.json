@@ -1,0 +1,18 @@
+{
+  "name": "2016",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Andras Nemeth (Cucu)",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "0.0.2",
+    "ts-node": "^1.7.0",
+    "tslint": "^4.0.2",
+    "typescript": "^2.0.10"
+  }
+}

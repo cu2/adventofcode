@@ -1,0 +1,80 @@
+{
+  "rules": {
+    "class-name": true,
+    "comment-format": [
+      true,
+      "check-space"
+    ],
+    "curly": true,
+    "indent": [
+      true,
+      "spaces"
+    ],
+    "align": [true, "parameters", "statements"],
+    "eofline": true,
+    "trailing-comma": [true, {"multiline": "always", "singleline": "never"}],
+    "no-duplicate-variable": true,
+    "no-eval": true,
+    "no-internal-module": true,
+    "no-trailing-whitespace": true,
+    "no-unsafe-finally": true,
+    "no-var-keyword": true,
+    "no-unused-variable": [true, "check-parameters", {"ignore-pattern": "^_"}],
+    "no-inferrable-types": [true],
+    "no-reference": true,
+    "no-namespace": true,
+    "no-var-requires": true,
+    "no-require-imports": true,
+    "only-arrow-functions": [true, "allow-declarations"],
+    "no-conditional-assignment": true,
+    "no-invalid-this": true,
+    "no-unused-expression": true,
+    "no-unused-new": true,
+    "no-use-before-declare": true,
+    "one-variable-per-declaration": [true],
+    "one-line": [
+      true,
+      "check-open-brace",
+      "check-whitespace",
+      "check-catch",
+      "check-finally",
+      "check-else"
+    ],
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "semicolon": [
+      true,
+      "always"
+    ],
+    "triple-equals": [
+      true,
+      "allow-null-check"
+    ],
+    "typedef-whitespace": [
+      true,
+      {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+      }
+    ],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-pascal-case"
+    ],
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-separator",
+      "check-type"
+    ]
+  }
+}
