@@ -13,12 +13,7 @@ const loadInput = (fileName: string): string =>
 
 const parseInput = (input: string): Triangle[] => {
   const rawTriangles = input.split('\n').map((line, _) => line.match(/\S+/g));
-  let filteredRawTriangles: RegExpMatchArray[] = [];  // filter doesn't fix the type :-(
-  rawTriangles.forEach((rawTriangle, _) => {
-    if (rawTriangle !== null) {
-      filteredRawTriangles.push(rawTriangle);
-    }
-  });
+  const filteredRawTriangles = <RegExpMatchArray[]>rawTriangles.filter((rawTriangle, _) => rawTriangle !== null);
   return filteredRawTriangles.map((rawTriangle, _) => {
     const sides = rawTriangle.map((matchElem, _) => parseInt(matchElem));
     return {
