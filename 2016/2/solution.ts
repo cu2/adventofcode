@@ -1,4 +1,4 @@
-import * as fs from 'fs';
+import { loadInput } from '../utils';
 
 
 interface Position {
@@ -6,9 +6,6 @@ interface Position {
   y: number;
 }
 
-
-const loadInput = (fileName: string): string =>
-  fs.readFileSync(fileName, 'utf8');
 
 const splitInput = (input: string): string[][] =>
   input.split('\n').map(line => line.split(''));

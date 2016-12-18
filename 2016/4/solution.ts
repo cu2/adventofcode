@@ -1,4 +1,4 @@
-import * as fs from 'fs';
+import { loadInput } from '../utils';
 
 
 interface RoomCode {
@@ -11,9 +11,6 @@ interface ExtendedRoomCode extends RoomCode {
   decryptedName: string;
 }
 
-
-const loadInput = (fileName: string): string =>
-  fs.readFileSync(fileName, 'utf8');
 
 const parseRoomCode = (rawCode: string): RoomCode | null => {
   const code = rawCode.match(/([a-z-]+)-([0-9]+)\[(.{5})\]/);

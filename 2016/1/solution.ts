@@ -1,4 +1,4 @@
-import * as fs from 'fs';
+import { loadInput } from '../utils';
 
 
 enum Direction {
@@ -43,9 +43,6 @@ const initialState = {
   heading: Heading.North,
 };
 
-
-const loadInput = (fileName: string): string =>
-  fs.readFileSync(fileName, 'utf8');
 
 const splitInput = (input: string): string[] =>
   input.split(',').map( e => e.trim() );

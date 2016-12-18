@@ -1,4 +1,4 @@
-import * as fs from 'fs';
+import { loadInput } from '../utils';
 
 
 interface Triangle {
@@ -7,9 +7,6 @@ interface Triangle {
   c: number;
 }
 
-
-const loadInput = (fileName: string): string =>
-  fs.readFileSync(fileName, 'utf8');
 
 const parseInput = (input: string): Triangle[] => {
   const rawTriangles = input.split('\n').map((line, _) => line.match(/\S+/g));
